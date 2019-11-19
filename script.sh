@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "This is from Github"
-NUMBER = $(($NUMBERONE + $NUMBERTWO))
+NUMBER=`echo "$NUMBERONE + $NUMBERTWO" | bc`
 echo "The total is $NUMBER"
 echo "THE END"
